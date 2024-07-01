@@ -6,13 +6,13 @@ _install_relpath="opt/tool-chains"
 
 pkgname=${_realname}
 pkgver=r167.98cc41b
-pkgrel=1
+pkgrel=2
 pkgdesc="Tool-chain for Yaul"
 arch=('x86_64')
 url="http://github.com/yaul-org/libyaul-build-scripts"
 license=('MIT')
 makedepends=("make" "gcc" "unzip" "help2man" "wget" "git")
-options=('!strip' '!buildflags' 'staticlibs' 'debug')
+options=('!strip' '!buildflags' '!lto' 'staticlibs' 'debug')
 source=("git+https://github.com/yaul-org/libyaul-build-scripts#branch=${_branch}" "local://yaul.sh")
 sha256sums=('SKIP' 'SKIP')
 
